@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --turqueza: #34B0BE;
+    --huevo: #D1CECA;
+    --gris: #242635;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10rem;
+    background-color: rgb(12, 2, 42);
+}
+
+.header{
+    background-color: rgb(12, 2, 42);
+}
+
+.header-content{
+    color: var(--huevo);
+}
+
+.nuevomenu{
+    padding: 10px;
+    width: 100%;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.div-label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+
+}
+
+.div-label:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3) ;
+}
+
+ ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+li:hover{
+    background: var(--turqueza)
+}
+
+a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+/*
+.image-home{
+    width: 220px;
+    height: 220px;
+}
+*/
+
+
+
+
+
+
+.header-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1.5rem 0.5rem;
+    position: relative;
+}
+
+.header-image{
+    background-color: var(--gris);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.header-text{
+    padding-top: 1.5rem;
+}
+
+h1, b{
+    color: var(--turqueza);
+}
+
+.hr{
+    height: auto;
+    margin-left: -10%;
+    margin-right: -10%;
+    background-color: var(--huevo);
+}
+
+.social-container{
+    width: 65%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 400px;
+    padding: 1rem 0;
+}
+
+.social-circle{
+    background-color: var(--huevo);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-pag{
+    background-color: var(--gris);
+    width: 90%;
+    height: 75px;
+    max-width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-ovalo{
+    background-color: var(--huevo);
+    width: 75px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.pequeña{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+/*aqui va el media cuery*/
+
+.main-content{
+    padding: 1rem 1.5rem;
+    background-color: rgb(12, 2, 42);
+}
+
+.about-section{
+    padding: 2rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+h2{
+    text-align: center;
+    color: var(--turqueza);
+}
+
+.secttion-title{
+    margin-bottom: 1rem;
+}
+
+.about-text{
+    color: var(--huevo);
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.outer-scroll{
+    height: 250px;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 1rem;
+    gap: 1rem;
+    width: 80vw;
+    margin: 1rem auto;
+    overflow-x: scroll;
+    overflow-y:hidden;
+}
+
+.outer-scroll::-webkit-scrollbar{
+    height: 3px;
+}
+
+.outer-scroll::-webkit-scrollbar-track{
+    background-color: var(--turqueza);
+}
+
+.outer-scroll::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid var(--white);
+}
+
+
+.div-scroll{
+    position: relative;
+    background-color: var(--white);
+    text-align: center;
+    height: 225px;
+    width: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+.servicios-svg{
+    position: absolute;
+
+}
+
+.img-scroll{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+    margin-left: 45px;
+
+}
+
+.h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.p-text{
+    color: var(--huevo);
+    text-align: center;
+    
+}
+
+.margin-h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.caja{
+    width: 100%;
+
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: 70px;
+}
+
+
+.skills:not(:last-child){
+    margin-bottom: 10px;
+    
+}
+
+.detalles{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu{
+    position: relative;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    width: 100%;
+    padding: 2px;
+    background-color: var(--white);
+    margin-top: 10px;
+
+}
+
+.menu .barra {
+    display: block;
+    position: relative;
+    background: var(--turqueza);
+    text-align: center;
+    color: #333;
+    height: 0.5em;
+    line-height: 2em;
+}
+    
+.menu .barra span {
+    position: absolute; left: 1em;
+
+}
+
+span{
+    color: var(--white);
+    font-weight: 550;
+
+}
+
+.span-color{
+    color: var(--turqueza);
+}
+
+.section-scroll{
+    height: 210px;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    margin: 1rem auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+}
+
+.section-scroll::-webkit-scrollbar{
+    height: 3px;
+}
+
+.section-scroll::-webkit-scrollbar-track{
+    background-color: var(--turqueza);
+}
+
+.section-scroll::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid var(--white);
+}
+
+.divscroll{
+    text-align: center;
+    height: 200px;
+    width: 270px;
+}
+
+.scrollimg{
+    height: 180px;
+    width: 250px;
+
+}
+
+
+
+.contenedor-section{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact{
+    position: relative;
+    background-color: var(--white);
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.h2-contacto{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.svg{
+    position: absolute;
+    color: var(--huevo);
+    width: 149px;
+    
+
+}
+
+.phone{
+    position: absolute;
+    width: 70px;
+    top: 10px;
+    left: 40px;
+    
+}
+
+
+h4{
+    margin-top: 90px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+.text-phone{
+    color: var(--huevo);
+    text-align: center;
+}
+
+footer{
+    height: 100%;
+    color: var(--turqueza);
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 743px){
+
+    .header-image {
+        background-color: var(--gris);
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+    }
+
+    .div-label{
+        display: grid;
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        
+    }
+
+    .menu-nav{
+        position: absolute;
+        width: 30%;
+        margin-left: -80%;
+        transition: all 0.5s;
+    }
+
+    ul{
+        flex-direction: column;
+
+    }
+
+    li{
+        border-top: 0.5px solid var(--white);
+
+    }
+
+    li:hover{
+        background: var(--turqueza)
+    }
+
+    #btn-menu:checked ~ .menu-nav {
+        margin: 0;
+
+    }
+
+    a{
+        text-align: left;
+    }
+    
+}
+/*111111111111*/
+@media screen and (min-width: 754px){
+    .outer-scroll{
+        height: 250px;
+        display: grid;
+        grid-auto-flow: column;
+        padding: 1rem;
+        gap: 1.5rem;
+        width: 80vw;
+        margin: 1rem auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        justify-items: center;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+
+    .header-information{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 1.5rem 0.5rem;
+        position: relative;
+        text-align: left;
+
+    }
+    .header-text{
+        position: absolute;
+        padding-right: 500px;
+        
+    }
+
+    .header-image{
+        background-color: var(--gris);
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        
+    }
+
+    .social-container{
+        position: absolute;
+        padding-right: 200px;
+        padding-top: 250px;
+        margin-right: 350px;
+    }
+
+    .social-pag{
+        background-color: var(--gris);
+        width: 90%;
+        max-width: 700px;
+        border-radius: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .social-ovalo{
+        background-color: var(--huevo);
+        width: 90px;
+        border-radius: 8px;
+    }
+
+    .image-home{
+        width: 225px;
+        margin-top: 5px;  
+    }
+    
+    h1, b{
+        color: var(--turqueza);
+    }
+    
+    .hr{
+        height: auto;
+        width: 160px;
+        background-color: var(--huevo);
+        margin-left: 0%;
+    }
+
+    .about-section{
+        padding: 2rem 0;
+        max-width: 600px;
+        margin: 0 auto;
+    
+    }
+
+    .outer-scroll{
+        height: 250px;
+        display: grid;
+        grid-auto-flow: column;
+        padding: 1rem;
+        gap: 1.5rem;
+        width: 80vw;
+        margin: 1rem auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        justify-items: center;
+    }
+
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: 70px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    
+    .section-scroll{
+        height: 265px;
+        display: grid;
+        grid-auto-flow: column;
+        padding: 1rem;
+        gap: 1rem;
+        width: 100%;
+        margin: 1rem auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-bottom: 30px;
+    }
+
+    .divscroll{
+        text-align: center;
+        height: 230px;
+        width: 280px;
+    }
+    
+    .scrollimg{
+        height: 230px;
+        width: 280px;
+    }
+
+    .h2-contacto{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-section {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-evenly;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .contact {
+        position: relative;
+        background-color: var(--white);
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width: 1248px){
+    .section-scroll {
+        height: 265px;
+        display: grid;
+        grid-auto-flow: column;
+        padding: 1rem;
+        gap: 1rem;
+        width: 100%;
+        margin: 1rem auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin-bottom: 30px;
+    }
+}
+
+/***********/
